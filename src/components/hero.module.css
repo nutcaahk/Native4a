@@ -4,7 +4,6 @@
   margin: 0 auto;
   max-width: var(--size-max-width);
   min-height: 200px;
-  padding: 0 0 var(--size-gutter);
   position: relative;
 }
 
@@ -16,6 +15,10 @@
   height: 61.8vh;
   max-height: 560px;
   width: 100%;
+}
+
+.lgo_img{
+  width: 50%;
 }
 
 .details {

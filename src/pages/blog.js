@@ -21,6 +21,10 @@ class BlogIndex extends React.Component {
   }
 }
 
+/*=======front end page blog========
+  <ArticlePreview posts={posts} />
+*/
+
 export default BlogIndex
 
 export const pageQuery = graphql`

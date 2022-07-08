@@ -6,7 +6,8 @@
     'Segoe UI Symbol';
   --font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
     'Courier New', monospace;
-  --font-serif: 'Times New Roman', Times, serif;
+  --font-serif: 'Poppins', sans-serif;
+
 
   /* palette */
   --white: #fff;
@@ -59,6 +60,7 @@
   /* text */
   /* color */
   --text-color: var(--black);
+  --native-color: #1D1D1D;
   /* size */
   --text-lead: var(--text-lg);
   --text-prose: var(--text-md);

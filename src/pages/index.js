@@ -4,26 +4,31 @@ import get from 'lodash/get'
 
 import Layout from '../components/layout'
 import Hero from '../components/hero'
-import ArticlePreview from '../components/article-preview'
+//import ArticlePreview from '../components/article-preview'
 
 class RootIndex extends React.Component {
   render() {
-    const posts = get(this, 'props.data.allContentfulBlogPost.nodes')
-    const [author] = get(this, 'props.data.allContentfulPerson.nodes')
+    //const posts = get(this, 'props.data.allContentfulBlogPost.nodes')
+    const [homePage] = get(this, 'props.data.allContentfulHomePage.nodes')
 
     return (
       <Layout location={this.props.location}>
         <Hero
-          image={author.heroImage.gatsbyImageData}
-          title={author.name}
-          content={author.shortBio}
-          company={author.company}
+          title={homePage.title}
+          subtitle={homePage.subTitle}
+          titleDes={homePage.titleDescription.titleDescription}
+          logo={homePage.nativeLogo.url}
         />
-        <ArticlePreview posts={posts} />
+
       </Layout>
     )
   }
 }
+
+/*
+  ===========blog post============
+  <ArticlePreview posts={posts} />
+*/
 
 export default RootIndex
 
@@ -63,6 +68,19 @@ export const pageQuery = graphql`
             placeholder: BLURRED
             width: 1180
           )
+        }
+        company
+      }
+    }
+    allContentfulHomePage {
+      nodes {
+        title
+        subTitle
+        nativeLogo {
+          url
+        }
+        titleDescription {
+          titleDescription
         }
       }
     }
