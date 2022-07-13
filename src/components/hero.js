@@ -21,7 +21,6 @@ import * as styles from './hero.module.css'
 const Hero = ({ title, content, subtitle, titleDes, logo}) => (
   <div className={styles.hero}>
     <div className={styles.details}>
-      <img className={styles.lgo_img}src={logo} alt="hello"/>
       <h1 className={styles.title}>{title}</h1>
       <h2 className={styles.title}>{subtitle}</h2>
       <p>{titleDes}</p>

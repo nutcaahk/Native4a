@@ -24,7 +24,6 @@ class RootIndex extends React.Component {
     )
   }
 }
-
 /*
   ===========blog post============
   <ArticlePreview posts={posts} />
