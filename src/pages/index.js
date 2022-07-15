@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import get from 'lodash/get'
 
 import Layout from '../components/layout'
-import Hero from '../components/hero'
+import * as styles from '../styles/index.module.css'
 //import ArticlePreview from '../components/article-preview'
 
 class RootIndex extends React.Component {
@@ -13,13 +13,20 @@ class RootIndex extends React.Component {
 
     return (
       <Layout location={this.props.location}>
-        <Hero
-          title={homePage.title}
-          subtitle={homePage.subTitle}
-          titleDes={homePage.titleDescription.titleDescription}
-          logo={homePage.nativeLogo.url}
-        />
-
+      <div className="flex justify-center">
+        <div className="grid grid-flow-col auto-cols-max box-decoration-clone">
+          <div>
+            <h1 className={styles.title}>{homePage.title}</h1>
+            <h2 className={styles.title}>{homePage.subTitle}</h2>  
+            <div className="border-b-2 border-amber-400 w-11/12"></div>
+            <p className="py-5">{homePage.titleDescription.titleDescription}</p>
+            <button class="rounded-none bg-blue-600 text-white px-7 py-1.5 rounded-md font-black text-xl">立即報價</button>
+          </div>
+          <div className='relative w-96'>
+            <img src={homePage.nativeBanner.url} alt="Native4A banner"/>
+          </div>
+        </div>
+      </div>
       </Layout>
     )
   }
@@ -80,6 +87,9 @@ export const pageQuery = graphql`
         }
         titleDescription {
           titleDescription
+        }
+        nativeBanner {
+          url
         }
       }
     }
