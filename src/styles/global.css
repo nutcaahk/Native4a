@@ -29,6 +29,10 @@ html * {
   box-sizing: border-box;
 }
 
+button{
+  color: blue;
+}
+
 body {
   background: var(--background);
   color: var(--native-color);

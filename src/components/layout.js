@@ -11,8 +11,6 @@ import Footer from './footer'
 class Layout extends React.Component {
   render() {
     const { children } = this.props
-
-
     return (
       <>
         <Seo />
