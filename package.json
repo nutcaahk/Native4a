@@ -23,6 +23,7 @@
     "react-bootstrap": "^2.4.0",
     "react-dom": "^18.0.0",
     "react-helmet": "^6.1.0",
+    "react-star-ratings": "^2.3.0",
     "reading-time": "^2.0.0-1"
   },
   "devDependencies": {

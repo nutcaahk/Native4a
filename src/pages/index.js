@@ -4,12 +4,21 @@ import get from 'lodash/get'
 
 import Layout from '../components/layout'
 import * as styles from '../styles/index.module.css'
+
+import StarRatings from "react-star-ratings";
+
 import background from '../img/Ellipse_53.png';
 import Native_Awards from '../img/Native_Awards1.png';
 import Native_Awards2 from '../img/Native_Awards2.png';
 import hket from '../img/logo_hket.png';
 import TheStandard from '../img/The_Standard_Logo.svg_.png';
-import section1image from '../img/20943885.png';
+import section2image from '../img/20943885.png';
+import Moving_Company from '../img/搬屋公司.png';
+import Interior_design from '../img/室內設計.png';
+import century21 from '../img/21.png';
+import RH_Curtain from '../img/RH_Curtain.png';
+import accolade from '../img/accolade.png';
+import Tind from '../img/TIND_logo.jpg';
 //import ArticlePreview from '../components/article-preview'
 
 class RootIndex extends React.Component {
@@ -19,10 +28,10 @@ class RootIndex extends React.Component {
 
     return (
       <Layout location={this.props.location}>
-      <div className={styles.container}>
+      <section className={styles.container}>
         <div className="grid grid-cols-2 gap-4 flex justify-center">
           <div >
-            <div className=''>
+            <div className="pt-16">
               <h1 className={styles.title}>{homePage.title}</h1>
               <h1 className={styles.title}>{homePage.subTitle}</h1>  
               <div className="border-b-2 border-amber-400 w-11/12"></div>
@@ -60,46 +69,177 @@ class RootIndex extends React.Component {
             <img className={styles.Yellow_Ellipse} src={background} alt="Native4A bannerbg"/>
           </div>
         </div>
-      </div>
-      <div className={styles.container}>
-        <div className='grid grid-cols-3 grid-row-2'>
-          <div>
-            <p className="underline decoration-yellow-400 underline-offset-4 decoration-2"><b>服務範圍</b></p>
-            <h2 className='text-4xl pt-3 pb-4'>我們將「創意好橋」<br/>盡情發揮。</h2>
-            <p className="text-xl">有「橋」，都要有渠道，看看我們擅長的領域。</p>
-          </div>
-          <div>
-            <img src={section1image} alt="service_Video_Production"/>
-            <h3 className='text-2xl font-bold'>影片製作</h3>
-            <p className='text-md'>用影片，直接表達產品的優勝之處。</p>
-            <button>立即報價</button>
-          </div>
-          <div>
-          <img src={section1image} alt="service_Video_Production"/>
-            <h3 className='text-2xl font-bold'>影片製作</h3>
-            <p className='text-md'>用影片，直接表達產品的優勝之處。</p>
-            <button>立即報價</button>
-          </div>
-          <div>
-          <img src={section1image} alt="service_Video_Production"/>
-            <h3 className='text-2xl font-bold'>影片製作</h3>
-            <p className='text-md'>用影片，直接表達產品的優勝之處。</p>
-            <button>立即報價</button>
-          </div>
-          <div>
-          <img src={section1image} alt="service_Video_Production"/>
-            <h3 className='text-2xl font-bold'>影片製作</h3>
-            <p className='text-md'>用影片，直接表達產品的優勝之處。</p>
-            <button>立即報價</button>
-          </div>
-          <div>
-          <img src={section1image} alt="service_Video_Production"/>
-            <h3 className='text-2xl font-bold'>影片製作</h3>
-            <p className='text-md'>用影片，直接表達產品的優勝之處。</p>
-            <button>立即報價</button>
+      </section>
+      <section className={styles.section2_wrap}>
+        <div className={styles.container}>
+          <div className='grid grid-cols-3 grid-row-2'>
+            <div>
+              <p className="underline decoration-yellow-400 underline-offset-4 decoration-2"><b>服務範圍</b></p>
+              <h2 className='text-4xl pt-3 pb-4'>我們將「創意好橋」<br/>盡情發揮。</h2>
+              <p className="text-xl">有「橋」，都要有渠道，看看我們擅長的領域。</p>
+            </div>
+            <div className='shadow m-9 p-9 rounded'>
+              <img src={section2image} alt="service_Video_Production"/>
+              <h3 className='text-2xl font-bold'>影片製作</h3>
+              <p className='text-md'>用影片，直接表達產品的優勝之處。</p>
+              <button className='mt-11 sticky top-[100vh]'>立即報價</button>
+            </div>
+            <div className='shadow m-9 p-9 rounded'>
+              <img src={section2image} alt="service_Video_Production"/>
+              <h3 className='text-2xl font-bold'>Google廣告</h3>
+              <p className='text-md'>在Google投放廣告包括：關鍵字搜索、GDN多煤體廣告、購物廣告、YouTube廣告等。</p>
+              <button className='mt-11 sticky top-[100vh]'>立即報價</button>
+            </div>
+            <div className='shadow m-9 p-9 rounded'>
+              <img src={section2image} alt="service_Video_Production"/>
+              <h3 className='text-2xl font-bold'>社交媒體廣告</h3>
+              <p className='text-md'>在Facebook & IG投放廣告，圖片廣告、多圖輪播、影片廣告。</p>
+              <button className='mt-11 sticky top-[100vh]'>立即報價</button>
+            </div>
+            <div className='shadow m-9 p-9 rounded'>
+              <img src={section2image} alt="service_Video_Production"/>
+              <h3 className='text-2xl font-bold'>SEO & Backlinks</h3>
+              <p className='text-md'>透過自然排名上升，在Google上獲得大量的免費點擊和商譽提升。</p>
+              <button className='mt-11 sticky top-[100vh]'>立即報價</button>
+            </div>
+            <div className='shadow m-9 p-9 rounded'>
+              <img src={section2image} alt="service_Video_Production"/>
+              <h3 className='text-2xl font-bold'>網站設計及開發</h3>
+              <p className='text-md'>設計創意和精美的網站，使品牌贏在起跑線。</p>
+              <button className='mt-11 sticky top-[100vh]'>立即報價</button>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
+      <section className={styles.section3_wrap}>
+        <div className={styles.container}>
+          <div className='grid grid-rows-2 items-center'>
+            <h2 className='text-center text-4xl underline decoration-yellow-400'>客戶見證我們成長</h2>
+            <div className='grid grid-cols-5'>
+              <div className='px-3'>
+                <img className='rounded-sm' src={Interior_design} alt="service_Video_Production"/>
+                <p className='text-md pt-5 text-center px-4'>NATIVE4A的專業知識協助我們提升了對網站的推廣。</p>
+                <div className='grid grid-cols-8 p-4'>
+                  <img className='rounded-sm col-start-1 col-end-3 rounded-full' src={Tind} alt="service_Video_Production"/>
+                  <div className='px-4 col-start-3 col-end-9'>
+                    <p><b>Lo Ng</b></p>
+                    <p>Taste Design CEO</p>
+                    <div>
+                      <StarRatings
+                        rating={5}
+                        starRatedColor="#ffaa22"
+                        starHoverColor="#ffaa22"
+                        starDimension="18px"
+                        starSpacing="4px"
+                        numberOfStars={5}
+                        name="rating"
+                        svgIconViewBox="0 0 1024 1024"
+                        svgIconPath="M1008.056 454.562c-72.046 87.755-199.442 232.63-199.442 232.63s20.836 159.064 32.514 267.717c5.077 55.339-34.822 79.272-80.005 57.7-85.98-43.192-216.818-110.113-246.25-125.192-29.952 14.928-162.103 80.744-248.973 123.836-45.705 21.52-86.082-2.408-80.945-57.647 11.833-108.493 32.883-267.403 32.883-267.403S88.979 541.633 16.098 453.99c-25.758-31.83-9.219-77.076 41.57-85.395 103.567-19.581 264.104-50.79 264.104-50.79S409.58 155.963 465.134 56.846c30.576-60.313 51.728-53.35 55.345-51.574 9.423 3.246 24.295 14.975 43.712 51.626 54.923 99.27 141.74 261.326 141.74 261.326s158.649 31.212 261.012 50.842c50.178 8.368 66.564 53.666 41.113 85.496z"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className='px-3'>
+                <img className='rounded-sm' src={Moving_Company} alt="service_Video_Production"/>
+                <p className='text-md pt-5 text-center px-4'>NATIVE4A的專業知識協助我們提升了對網站的推廣。</p>
+                <div className='grid grid-cols-8 p-4'>
+                  <img className='rounded-sm col-start-1 col-end-3 rounded-full' src={Tind} alt="service_Video_Production"/>
+                  <div className='px-4 col-start-3 col-end-9'>
+                    <p><b>Lo Ng</b></p>
+                    <p>Taste Design CEO</p>
+                    <div>
+                      <StarRatings
+                        rating={5}
+                        starRatedColor="#ffaa22"
+                        starHoverColor="#ffaa22"
+                        starDimension="18px"
+                        starSpacing="4px"
+                        numberOfStars={5}
+                        name="rating"
+                        svgIconViewBox="0 0 1024 1024"
+                        svgIconPath="M1008.056 454.562c-72.046 87.755-199.442 232.63-199.442 232.63s20.836 159.064 32.514 267.717c5.077 55.339-34.822 79.272-80.005 57.7-85.98-43.192-216.818-110.113-246.25-125.192-29.952 14.928-162.103 80.744-248.973 123.836-45.705 21.52-86.082-2.408-80.945-57.647 11.833-108.493 32.883-267.403 32.883-267.403S88.979 541.633 16.098 453.99c-25.758-31.83-9.219-77.076 41.57-85.395 103.567-19.581 264.104-50.79 264.104-50.79S409.58 155.963 465.134 56.846c30.576-60.313 51.728-53.35 55.345-51.574 9.423 3.246 24.295 14.975 43.712 51.626 54.923 99.27 141.74 261.326 141.74 261.326s158.649 31.212 261.012 50.842c50.178 8.368 66.564 53.666 41.113 85.496z"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className='px-3'>
+                <img className='rounded-sm' src={century21} alt="service_Video_Production"/>
+                <p className='text-md pt-5 text-center px-4'>NATIVE4A的專業知識協助我們提升了對網站的推廣。</p>
+                <div className='grid grid-cols-8 p-4'>
+                  <img className='rounded-sm col-start-1 col-end-3 rounded-full' src={Tind} alt="service_Video_Production"/>
+                  <div className='px-4 col-start-3 col-end-9'>
+                    <p><b>Lo Ng</b></p>
+                    <p>Taste Design CEO</p>
+                    <div>
+                      <StarRatings
+                        rating={5}
+                        starRatedColor="#ffaa22"
+                        starHoverColor="#ffaa22"
+                        starDimension="18px"
+                        starSpacing="4px"
+                        numberOfStars={5}
+                        name="rating"
+                        svgIconViewBox="0 0 1024 1024"
+                        svgIconPath="M1008.056 454.562c-72.046 87.755-199.442 232.63-199.442 232.63s20.836 159.064 32.514 267.717c5.077 55.339-34.822 79.272-80.005 57.7-85.98-43.192-216.818-110.113-246.25-125.192-29.952 14.928-162.103 80.744-248.973 123.836-45.705 21.52-86.082-2.408-80.945-57.647 11.833-108.493 32.883-267.403 32.883-267.403S88.979 541.633 16.098 453.99c-25.758-31.83-9.219-77.076 41.57-85.395 103.567-19.581 264.104-50.79 264.104-50.79S409.58 155.963 465.134 56.846c30.576-60.313 51.728-53.35 55.345-51.574 9.423 3.246 24.295 14.975 43.712 51.626 54.923 99.27 141.74 261.326 141.74 261.326s158.649 31.212 261.012 50.842c50.178 8.368 66.564 53.666 41.113 85.496z"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className='px-3'>
+                <img className='rounded-sm' src={RH_Curtain} alt="service_Video_Production"/>
+                <p className='text-md pt-5 text-center px-4'>NATIVE4A的專業知識協助我們提升了對網站的推廣。</p>
+                <div className='grid grid-cols-8 p-4'>
+                  <img className='rounded-sm col-start-1 col-end-3 rounded-full' src={Tind} alt="service_Video_Production"/>
+                  <div className='px-4 col-start-3 col-end-9'>
+                    <p><b>Lo Ng</b></p>
+                    <p>Taste Design CEO</p>
+                    <div>
+                      <StarRatings
+                        rating={5}
+                        starRatedColor="#ffaa22"
+                        starHoverColor="#ffaa22"
+                        starDimension="18px"
+                        starSpacing="4px"
+                        numberOfStars={5}
+                        name="rating"
+                        svgIconViewBox="0 0 1024 1024"
+                        svgIconPath="M1008.056 454.562c-72.046 87.755-199.442 232.63-199.442 232.63s20.836 159.064 32.514 267.717c5.077 55.339-34.822 79.272-80.005 57.7-85.98-43.192-216.818-110.113-246.25-125.192-29.952 14.928-162.103 80.744-248.973 123.836-45.705 21.52-86.082-2.408-80.945-57.647 11.833-108.493 32.883-267.403 32.883-267.403S88.979 541.633 16.098 453.99c-25.758-31.83-9.219-77.076 41.57-85.395 103.567-19.581 264.104-50.79 264.104-50.79S409.58 155.963 465.134 56.846c30.576-60.313 51.728-53.35 55.345-51.574 9.423 3.246 24.295 14.975 43.712 51.626 54.923 99.27 141.74 261.326 141.74 261.326s158.649 31.212 261.012 50.842c50.178 8.368 66.564 53.666 41.113 85.496z"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className='px-3'>
+                <img className='rounded-sm' src={accolade} alt="service_Video_Production"/>
+                <p className='text-md pt-5 text-center px-4'>NATIVE4A的專業知識協助我們提升了對網站的推廣。</p>
+                <div className='grid grid-cols-8 p-4'>
+                  <img className='rounded-sm col-start-1 col-end-3 rounded-full' src={Tind} alt="service_Video_Production"/>
+                  <div className='px-4 col-start-3 col-end-9'>
+                    <p><b>Lo Ng</b></p>
+                    <p>Taste Design CEO</p>
+                    <div>
+                      <StarRatings
+                        rating={5}
+                        starRatedColor="#ffaa22"
+                        starHoverColor="#ffaa22"
+                        starDimension="18px"
+                        starSpacing="4px"
+                        numberOfStars={5}
+                        name="rating"
+                        svgIconViewBox="0 0 1024 1024"
+                        svgIconPath="M1008.056 454.562c-72.046 87.755-199.442 232.63-199.442 232.63s20.836 159.064 32.514 267.717c5.077 55.339-34.822 79.272-80.005 57.7-85.98-43.192-216.818-110.113-246.25-125.192-29.952 14.928-162.103 80.744-248.973 123.836-45.705 21.52-86.082-2.408-80.945-57.647 11.833-108.493 32.883-267.403 32.883-267.403S88.979 541.633 16.098 453.99c-25.758-31.83-9.219-77.076 41.57-85.395 103.567-19.581 264.104-50.79 264.104-50.79S409.58 155.963 465.134 56.846c30.576-60.313 51.728-53.35 55.345-51.574 9.423 3.246 24.295 14.975 43.712 51.626 54.923 99.27 141.74 261.326 141.74 261.326s158.649 31.212 261.012 50.842c50.178 8.368 66.564 53.666 41.113 85.496z"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       </Layout>
       
     )
@@ -108,6 +248,9 @@ class RootIndex extends React.Component {
 /*
   ===========blog post============
   <ArticlePreview posts={posts} />
+
+  ===========multi class============
+  <div className={`${styles.container} ${styles.bg_write}`}>
 */
 
 export default RootIndex
