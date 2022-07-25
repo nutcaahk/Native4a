@@ -19,6 +19,22 @@ import century21 from '../img/21.png';
 import RH_Curtain from '../img/RH_Curtain.png';
 import accolade from '../img/accolade.png';
 import Tind from '../img/TIND_logo.jpg';
+import alessandro_logo from '../img/alessandro_logo.png';
+import accolade_logo from '../img/accolade_logo.png';
+import esey_logo from '../img/esey_logo.png';
+import refined_logo from '../img/refined_logo.png';
+import NORA_logo from '../img/NORA_logo.png';
+import Gas_logo from '../img/煤氣達人_logo.png';
+import LAFAYETTE_logo from '../img/LAFAYETTE_logo.png';
+import JACO_logo from '../img/JACO_logo.png';
+import LOST_logo from '../img/LOST_logo.png';
+import PHK_logo from '../img/鉑康LOGO.png';
+import taste_logo from '../img/taste_logo.png';
+import health_logo from '../img/health_logo.png';
+import emmas_logo from '../img/emmas_logo.png';
+import bay247_logo from '../img/bay247_logo(2).png';
+import Annetso_Shop_logo from '../img/Annetso_Shop_logo.png'
+import Cardhero_Logo from '../img/Cardhero_Logo.png'
 //import ArticlePreview from '../components/article-preview'
 
 class RootIndex extends React.Component {
@@ -111,7 +127,7 @@ class RootIndex extends React.Component {
           </div>
         </div>
       </section>
-      <section className={styles.section3_wrap}>
+      <section className={styles.section3an4_wrap}>
         <div className={styles.container}>
           <div className='grid grid-rows-2 items-center'>
             <h2 className='text-center text-4xl underline decoration-yellow-400'>客戶見證我們成長</h2>
@@ -240,8 +256,70 @@ class RootIndex extends React.Component {
           </div>
         </div>
       </section>
+      <section className={styles.section3an4_wrap}>
+        <div className={styles.container}>
+          <div className='grid grid-rows-2 items-center'>
+            <h2 className='text-center text-4xl underline decoration-yellow-400'>更多合作客戶</h2>
+            <div className='grid grid-cols-4'>
+              <div>
+                <img className='rounded-sm' src={PHK_logo} alt="service_Video_Production"/>
+              </div>
+              <div>
+                <img className='rounded-sm' src={esey_logo} alt="service_Video_Production"/>
+              </div>
+              <div>
+                <img className='rounded-sm' src={taste_logo} alt="service_Video_Production"/>
+              </div>
+              <div>
+                <img className='rounded-sm' src={accolade_logo} alt="service_Video_Production"/>
+              </div>
+            </div>
+            <div className='grid grid-cols-4'>
+              <div>
+                <img className='rounded-sm' src={LOST_logo} alt="service_Video_Production"/>
+              </div>
+              <div>
+                <img className='rounded-sm' src={JACO_logo} alt="service_Video_Production"/>
+              </div>
+              <div>
+                <img className='rounded-sm' src={refined_logo} alt="service_Video_Production"/>
+              </div>
+              <div>
+                <img className='rounded-sm' src={Gas_logo} alt="service_Video_Production"/>
+              </div>
+            </div>
+            <div className='grid grid-cols-4'>
+              <div>
+                <img className='rounded-sm' src={health_logo} alt="service_Video_Production"/>
+              </div>
+              <div>
+                <img className='rounded-sm' src={bay247_logo} alt="service_Video_Production"/>
+              </div>
+              <div>
+                <img className='rounded-sm' src={emmas_logo} alt="service_Video_Production"/>
+              </div>
+              <div>
+                <img className='rounded-sm' src={LAFAYETTE_logo} alt="service_Video_Production"/>
+              </div>
+            </div>
+            <div className='grid grid-cols-4'>
+              <div>
+                 <img className='rounded-sm' src={NORA_logo} alt="service_Video_Production"/>
+              </div>
+              <div>
+                <img className='rounded-sm' src={alessandro_logo} alt="service_Video_Production"/>
+              </div>
+              <div>
+                <img className='rounded-sm' src={Annetso_Shop_logo} alt="service_Video_Production"/>
+              </div>
+              <div>
+                <img className='rounded-sm' src={Cardhero_Logo} alt="service_Video_Production"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       </Layout>
-      
     )
   }
 }
