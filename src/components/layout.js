@@ -1,8 +1,5 @@
 import React from 'react'
 
-
-
-
 import './variables.css'
 import '../styles/global.css'
 import Seo from './seo'
