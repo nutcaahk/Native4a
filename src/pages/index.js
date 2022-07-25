@@ -264,60 +264,60 @@ class RootIndex extends React.Component {
         <div className={styles.container}>
           <div className='grid grid-rows-2 items-center'>
             <h2 className='text-center text-4xl underline decoration-yellow-400'>更多合作客戶</h2>
-            <div className='grid grid-cols-4'>
+            <div className='grid grid-cols-4 items-center'>
               <div>
-                <img className='rounded-sm' src={PHK_logo} alt="service_Video_Production"/>
+                <img className='rounded-sm w-72 p-11' src={PHK_logo} alt="service_Video_Production"/>
               </div>
               <div>
-                <img className='rounded-sm' src={esey_logo} alt="service_Video_Production"/>
+                <img className='rounded-sm w-72 p-11' src={esey_logo} alt="service_Video_Production"/>
               </div>
               <div>
-                <img className='rounded-sm' src={taste_logo} alt="service_Video_Production"/>
+                <img className='rounded-sm w-72 p-11' src={taste_logo} alt="service_Video_Production"/>
               </div>
               <div>
-                <img className='rounded-sm' src={accolade_logo} alt="service_Video_Production"/>
-              </div>
-            </div>
-            <div className='grid grid-cols-4'>
-              <div>
-                <img className='rounded-sm' src={LOST_logo} alt="service_Video_Production"/>
-              </div>
-              <div>
-                <img className='rounded-sm' src={JACO_logo} alt="service_Video_Production"/>
-              </div>
-              <div>
-                <img className='rounded-sm' src={refined_logo} alt="service_Video_Production"/>
-              </div>
-              <div>
-                <img className='rounded-sm' src={Gas_logo} alt="service_Video_Production"/>
+                <img className='rounded-sm w-72 p-11' src={accolade_logo} alt="service_Video_Production"/>
               </div>
             </div>
-            <div className='grid grid-cols-4'>
+            <div className='grid grid-cols-4 items-center'>
               <div>
-                <img className='rounded-sm' src={health_logo} alt="service_Video_Production"/>
+                <img className='rounded-sm w-72 p-11' src={LOST_logo} alt="service_Video_Production"/>
               </div>
               <div>
-                <img className='rounded-sm' src={bay247_logo} alt="service_Video_Production"/>
+                <img className='rounded-sm w-72 p-11' src={JACO_logo} alt="service_Video_Production"/>
               </div>
               <div>
-                <img className='rounded-sm' src={emmas_logo} alt="service_Video_Production"/>
+                <img className='rounded-sm w-72 p-11' src={refined_logo} alt="service_Video_Production"/>
               </div>
               <div>
-                <img className='rounded-sm' src={LAFAYETTE_logo} alt="service_Video_Production"/>
+                <img className='rounded-sm w-72 p-11' src={Gas_logo} alt="service_Video_Production"/>
               </div>
             </div>
-            <div className='grid grid-cols-4'>
+            <div className='grid grid-cols-4 items-center'>
               <div>
-                 <img className='rounded-sm' src={NORA_logo} alt="service_Video_Production"/>
+                <img className='rounded-sm w-72 p-11' src={health_logo} alt="service_Video_Production"/>
               </div>
               <div>
-                <img className='rounded-sm' src={alessandro_logo} alt="service_Video_Production"/>
+                <img className='rounded-sm w-64 p-11' src={bay247_logo} alt="service_Video_Production"/>
               </div>
               <div>
-                <img className='rounded-sm' src={Annetso_Shop_logo} alt="service_Video_Production"/>
+                <img className='rounded-sm w-72 p-11' src={emmas_logo} alt="service_Video_Production"/>
               </div>
               <div>
-                <img className='rounded-sm' src={Cardhero_Logo} alt="service_Video_Production"/>
+                <img className='rounded-sm w-72 p-11' src={LAFAYETTE_logo} alt="service_Video_Production"/>
+              </div>
+            </div>
+            <div className='grid grid-cols-4 justify-items-center items-center'>
+              <div>
+                <img className='rounded-sm w-72 p-11' src={NORA_logo} alt="service_Video_Production"/>
+              </div>
+              <div>
+                <img className='rounded-sm w-60 p-11' src={alessandro_logo} alt="service_Video_Production"/>
+              </div>
+              <div>
+                <img className='rounded-sm w-72 p-11' src={Annetso_Shop_logo} alt="service_Video_Production"/>
+              </div>
+              <div>
+                <img className='rounded-sm w-72 p-11' src={Cardhero_Logo} alt="service_Video_Production"/>
               </div>
             </div>
           </div>
