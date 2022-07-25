@@ -35,6 +35,10 @@ import emmas_logo from '../img/emmas_logo.png';
 import bay247_logo from '../img/bay247_logo(2).png';
 import Annetso_Shop_logo from '../img/Annetso_Shop_logo.png'
 import Cardhero_Logo from '../img/Cardhero_Logo.png'
+import easy_transportation_logo from '../img/easy_transportation_logo.jpg'
+import c21_logo from '../img/c21.png'
+import RefinedHouse_logo from '../img/RefinedHouse_logo.jpg'
+import accolade_logo_s from '../img/accolade_logo_s.png'
 //import ArticlePreview from '../components/article-preview'
 
 class RootIndex extends React.Component {
@@ -160,10 +164,10 @@ class RootIndex extends React.Component {
                 <img className='rounded-sm' src={Moving_Company} alt="service_Video_Production"/>
                 <p className='text-md pt-5 text-center px-4'>NATIVE4A的專業知識協助我們提升了對網站的推廣。</p>
                 <div className='grid grid-cols-8 p-4'>
-                  <img className='rounded-sm col-start-1 col-end-3 rounded-full' src={Tind} alt="service_Video_Production"/>
+                  <img className='rounded-sm col-start-1 col-end-3 rounded-full' src={easy_transportation_logo} alt="service_Video_Production"/>
                   <div className='px-4 col-start-3 col-end-9'>
-                    <p><b>Lo Ng</b></p>
-                    <p>Taste Design CEO</p>
+                    <p><b>兆哥</b></p>
+                    <p>搬屋易Founder</p>
                     <div>
                       <StarRatings
                         rating={5}
@@ -184,10 +188,10 @@ class RootIndex extends React.Component {
                 <img className='rounded-sm' src={century21} alt="service_Video_Production"/>
                 <p className='text-md pt-5 text-center px-4'>NATIVE4A的專業知識協助我們提升了對網站的推廣。</p>
                 <div className='grid grid-cols-8 p-4'>
-                  <img className='rounded-sm col-start-1 col-end-3 rounded-full' src={Tind} alt="service_Video_Production"/>
+                  <img className='rounded-sm col-start-1 col-end-3 rounded-full' src={c21_logo} alt="service_Video_Production"/>
                   <div className='px-4 col-start-3 col-end-9'>
-                    <p><b>Lo Ng</b></p>
-                    <p>Taste Design CEO</p>
+                    <p><b>Max Hung</b></p>
+                    <p>世紀21業務經理</p>
                     <div>
                       <StarRatings
                         rating={5}
@@ -208,10 +212,10 @@ class RootIndex extends React.Component {
                 <img className='rounded-sm' src={RH_Curtain} alt="service_Video_Production"/>
                 <p className='text-md pt-5 text-center px-4'>NATIVE4A的專業知識協助我們提升了對網站的推廣。</p>
                 <div className='grid grid-cols-8 p-4'>
-                  <img className='rounded-sm col-start-1 col-end-3 rounded-full' src={Tind} alt="service_Video_Production"/>
+                  <img className='rounded-sm col-start-1 col-end-3 rounded-full' src={RefinedHouse_logo} alt="service_Video_Production"/>
                   <div className='px-4 col-start-3 col-end-9'>
-                    <p><b>Lo Ng</b></p>
-                    <p>Taste Design CEO</p>
+                    <p><b>Tony</b></p>
+                    <p>RH Curtain CEO</p>
                     <div>
                       <StarRatings
                         rating={5}
@@ -232,10 +236,10 @@ class RootIndex extends React.Component {
                 <img className='rounded-sm' src={accolade} alt="service_Video_Production"/>
                 <p className='text-md pt-5 text-center px-4'>NATIVE4A的專業知識協助我們提升了對網站的推廣。</p>
                 <div className='grid grid-cols-8 p-4'>
-                  <img className='rounded-sm col-start-1 col-end-3 rounded-full' src={Tind} alt="service_Video_Production"/>
+                  <img className='rounded-sm col-start-1 col-end-3 rounded-full' src={accolade_logo_s} alt="service_Video_Production"/>
                   <div className='px-4 col-start-3 col-end-9'>
-                    <p><b>Lo Ng</b></p>
-                    <p>Taste Design CEO</p>
+                    <p><b>Paul Lu</b></p>
+                    <p>Accolade COO</p>
                     <div>
                       <StarRatings
                         rating={5}
