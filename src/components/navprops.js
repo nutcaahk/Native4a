@@ -8,7 +8,7 @@ const Navprops = () => (
   <nav role="navigation" className={styles.container} aria-label="Main">
     <ul className={styles.navigation}>
       <li className={styles.navigationItem}>
-        <Link to="/blog/">
+        <Link to="/">
         影片製作
         </Link>
       </li>
